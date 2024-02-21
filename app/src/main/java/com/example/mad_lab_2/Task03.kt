@@ -1,6 +1,7 @@
 package com.example.mad_lab_2
 
 import android.os.Bundle
+import android.provider.CalendarContract.Colors
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -22,6 +23,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.mad_lab_2.ui.theme.MAD_LAB_2Theme
@@ -54,6 +56,9 @@ class TaskThree : ComponentActivity() {
 
 
 
+//@Preview(showBackground = true, backgroundColor = 0x3FFFFFFF)
+
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun FillScreenWithRows(modifier: Modifier = Modifier) {
 
